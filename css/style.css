@@ -461,7 +461,7 @@ body.dark-theme .theme-toggle-btn .icon-moon {
   width: 100%;
   max-width: 880px;
   margin: 0 auto;
-  padding: 28px 30px 24px;
+  padding: 26px 24px 22px;
   box-sizing: border-box;
   box-shadow: var(--shadow-lg);
   -webkit-font-smoothing: antialiased;
@@ -506,10 +506,11 @@ body.dark-theme .theme-toggle-btn .icon-moon {
 /* 본문: 다이어그램 + 목록 */
 .smp-body {
   display: grid;
-  grid-template-columns: 256px 1fr;
-  gap: 20px;
+  grid-template-columns: minmax(180px, 220px) minmax(0, 1fr);
+  gap: 16px;
   align-items: center;
-  margin-top: 22px;
+  margin-top: 20px;
+  min-width: 0;
 }
 
 /* --- 동심원 다이어그램 --- */
@@ -597,22 +598,31 @@ body.dark-theme .theme-toggle-btn .icon-moon {
   padding: 0;
   display: grid;
   gap: 4px;
+  min-width: 0;
+  width: 100%;
 }
 
 .smp-item {
   transition: opacity 0.2s ease;
+  min-width: 0;
 }
 
 .smp-item a {
   display: grid;
-  grid-template-columns: 14px 1fr auto;
-  column-gap: 12px;
+  grid-template-columns: 14px minmax(0, 1fr) auto;
+  column-gap: 10px;
   align-items: start;
-  padding: 11px 12px 11px 10px;
-  border-radius: 14px;
+  padding: 9px 8px;
+  border-radius: 12px;
   text-decoration: none;
   color: inherit;
   transition: background-color 0.2s ease;
+  min-width: 0;
+}
+
+.smp-item a > span:nth-child(2) {
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .smp-item a:hover,
@@ -642,19 +652,19 @@ body.dark-theme .theme-toggle-btn .icon-moon {
 .smp-name {
   display: block;
   margin-top: 1px;
-  font-size: 15.5px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--ink);
   letter-spacing: -0.015em;
-  line-height: 1.38;
+  line-height: 1.35;
 }
 
 .smp-desc {
   display: block;
   margin-top: 3px;
-  font-size: 13px;
+  font-size: 12.5px;
   color: var(--sub);
-  line-height: 1.5;
+  line-height: 1.48;
 }
 
 .smp-desc b {
@@ -663,14 +673,17 @@ body.dark-theme .theme-toggle-btn .icon-moon {
 }
 
 .smp-count {
-  align-self: center;
-  font-size: 12.5px;
-  font-weight: 600;
+  align-self: flex-start;
+  margin-top: 2px;
+  margin-left: 4px;
+  font-size: 12px;
+  font-weight: 700;
   color: var(--steel);
   white-space: nowrap;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 3px;
+  flex-shrink: 0;
 }
 
 .smp-count svg {
@@ -2223,8 +2236,24 @@ body.dark-theme .modal-header {
 /* ==========================================================================
    11. RESPONSIVE DESIGN (태블릿 & 스마트폰 완벽 대응)
    ========================================================================== */
+@media (max-width: 1180px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 36px;
+  }
+
+  .smp-map {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .smp-body {
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 22px;
+  }
+}
+
 @media (max-width: 1024px) {
-  .hero-grid,
   .about-layout,
   .contact-top-grid,
   .location-grid {
