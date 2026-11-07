@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="3O4q5nxKg7PuNCESQI7gm_qzWu7qnp8BbKHI10ZQ4zs" />
+  <meta name="description"
+    content="정보보호 전문기업 에스엠피플스㈜ (SMPeoples | Security Managing Peoples) - 망연계, SSL VPN, 웹방화벽, 취약점진단, NAC, 시스템 접근제어, 데스크톱 가상화 보안 솔루션 공급·구축·기술지원" />
+  <meta name="keywords"
+    content="에스엠피플스, SMPeoples, 정보보호 전문기업, 망연계 솔루션, SSL VPN, 웹방화벽, 웹 취약점진단, 서버 취약점진단, NAC, 시스템 접근제어, 데스크톱 가상화" />
+  <meta name="author" content="SMPeoples" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="에스엠피플스㈜ | 정보보호 전문기업 SMPeoples" />
+  <meta property="og:description" content="정보보안의 최전선에서 고객의 안전과 신뢰를 지키는 정보보호 전문기업 에스엠피플스㈜ 홈페이지" />
+  <meta property="og:url" content="http://www.smpeoples.kr" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <title>에스엠피플스㈜ | 정보보호 전문기업 SMPeoples</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b125eb25bce6db4958ee0c47753f15b6"></script>
+</head>
+
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- 1. 상단 헤더 -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#home" class="brand-logo" aria-label="에스엠피플스㈜ 홈으로 이동">
+        <img src="images/logo.svg" alt="에스엠피플스㈜ 로고" class="logo-svg logo-for-light" />
+        <img src="images/logo-dark.svg" alt="에스엠피플스㈜ 로고" class="logo-svg logo-for-dark" />
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="주요 메뉴">
+        <a href="#home" class="nav-link active" data-section="home">홈</a>
+        <a href="#about" class="nav-link" data-section="about">회사소개</a>
+        <a href="#solutions" class="nav-link" data-section="solutions">보안 솔루션</a>
+        <a href="#news" class="nav-link" data-section="news">보안뉴스</a>
+        <a href="#location" class="nav-link" data-section="location">오시는길 · 문의</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="다크모드 전환" title="라이트/다크 모드 전환">
+          <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+          <span class="theme-toggle-label" id="themeToggleLabel">다크모드</span>
+        </button>
+        <a href="#solutions" class="btn btn-outline btn-sm header-cta-sub">제품소개서 열람</a>
+        <a href="#location" class="btn btn-primary btn-sm header-cta-main">도입 · 기술 문의</a>
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. HERO: 고객이 방문 즉시 '이 회사가 무슨 일을 하는지' 명확히 알 수 있는 첫 화면 -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="pulse-dot"></span>
+              <span>Security Managing Peoples · 정보보호 전문기업</span>
+            </div>
+            <p class="hero-kicker">정보보호 전문기업 에스엠피플스㈜</p>
+            <h1 class="hero-title">
+              기업과 기관의 안전한 보안 환경을<br class="desktop-br" />
+              설계·구축하는 <span class="company-highlight">에스엠피플스㈜</span>
+            </h1>
+            <p class="hero-summary">
+              <strong>에스엠피플스㈜</strong>는 정보보안의 최전선에서 고객 환경에 가장 적합한 <strong>국내 대표 7대 제조사의 핵심 보안 솔루션</strong>을 제안·공급하고,
+              전문 엔지니어가 직접 구축부터 운영 기술지원까지 책임지는 통합 보안 파트너입니다.
+            </p>
+
+            <!-- 고객이 한눈에 파악하는 에스엠피플스㈜의 3대 핵심 역할 -->
+            <div class="hero-role-steps">
+              <div class="role-step">
+                <span class="role-step-num">STEP 01 · 컨설팅·공급</span>
+                <strong>맞춤 보안 솔루션 제안</strong>
+                <span>망분리·원격근무·웹보안·접근통제·취약점 진단 환경별 최적 제품 공급</span>
+              </div>
+              <div class="role-step">
+                <span class="role-step-num">STEP 02 · 구축·연동</span>
+                <strong>전문 엔지니어 직접 구축</strong>
+                <span>기존 인프라 연동, 보안 정책 설계 및 컴플라이언스 기준 충족</span>
+              </div>
+              <div class="role-step">
+                <span class="role-step-num">STEP 03 · 유지보수</span>
+                <strong>본사 · 대전 지사 기술지원</strong>
+                <span>수도권(고양) 본사 및 중부권(대전) 지사 중심 신속한 기술지원</span>
+              </div>
+            </div>
+
+            <div class="hero-cta-group">
+              <a href="#solutions" class="btn btn-primary">
+                <span>취급 솔루션 및 소개서 보기</span>
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                  <path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+              <a href="#about" class="btn btn-outline">회사소개 보기</a>
+              <a href="#location" class="btn btn-outline">영업·기술 문의하기</a>
+            </div>
+          </div>
+
+          <!-- 우측: 에스엠피플스㈜ 4대 보안 사업 영역 (동심원 보안 계층도) -->
+          <section class="smp-map" id="smpMap" aria-labelledby="smpTitle">
+            <header class="smp-head">
+              <img src="logo.png" alt="에스엠피플스 로고" />
+              <div>
+                <h2 id="smpTitle">에스엠피플스(주) 4대 보안 사업 영역</h2>
+                <p>바깥 경계부터 사용자 PC까지, 영역을 누르면 해당 솔루션과 PDF 브로셔로 이동합니다</p>
+              </div>
+            </header>
+
+            <div class="smp-body">
+              <!-- 동심원 보안 계층도 -->
+              <svg class="smp-rings" viewBox="-28 -6 416 452" role="img" aria-label="악성코드, 해킹, 랜섬웨어 같은 외부 위협을 바깥에서 안쪽으로 경계·네트워크 보안, 접근통제·계정관리, 취약점 진단, 데스크톱 가상화가 업무 데이터를 감싸는 보안 계층도">
+                <defs>
+                  <path id="arc1" d="M 27.5 180 A 152.5 152.5 0 0 1 332.5 180" />
+                  <path id="arc2" d="M 57.5 180 A 122.5 122.5 0 0 1 302.5 180" />
+                  <path id="arc3" d="M 87.5 180 A 92.5 92.5 0 0 1 272.5 180" />
+                  <path id="arc4" d="M 124.5 180 A 55.5 55.5 0 0 1 235.5 180" />
+                </defs>
+
+                <!-- 외부 위협: 바깥 링에서 차단됨 -->
+                <g class="grow g6" aria-hidden="true">
+                  <line class="trail" x1="35.8" y1="324.2" x2="49.9" y2="310.1" />
+                  <line class="spark" x1="58.1" y1="304.6" x2="57.6" y2="310.1" />
+                  <line class="spark" x1="56.3" y1="303.7" x2="52.4" y2="307.6" />
+                  <line class="spark" x1="55.4" y1="301.9" x2="49.9" y2="302.4" />
+                  <g transform="translate(23.0 337.0)"><circle r="15" class="badge" /><circle r="5" class="tf" /><line x1="5.00" y1="0.00" x2="8.30" y2="0.00" class="ts" /><circle cx="9.20" cy="0.00" r="1.5" class="tf" /><line x1="3.54" y1="3.54" x2="5.87" y2="5.87" class="ts" /><circle cx="6.51" cy="6.51" r="1.5" class="tf" /><line x1="0.00" y1="5.00" x2="0.00" y2="8.30" class="ts" /><circle cx="0.00" cy="9.20" r="1.5" class="tf" /><line x1="-3.54" y1="3.54" x2="-5.87" y2="5.87" class="ts" /><circle cx="-6.51" cy="6.51" r="1.5" class="tf" /><line x1="-5.00" y1="0.00" x2="-8.30" y2="0.00" class="ts" /><circle cx="-9.20" cy="0.00" r="1.5" class="tf" /><line x1="-3.54" y1="-3.54" x2="-5.87" y2="-5.87" class="ts" /><circle cx="-6.51" cy="-6.51" r="1.5" class="tf" /><line x1="-0.00" y1="-5.00" x2="-0.00" y2="-8.30" class="ts" /><circle cx="-0.00" cy="-9.20" r="1.5" class="tf" /><line x1="3.54" y1="-3.54" x2="5.87" y2="-5.87" class="ts" /><circle cx="6.51" cy="-6.51" r="1.5" class="tf" /></g>
+                  <text class="threat-label" x="23.0" y="368.0" text-anchor="middle">악성코드</text>
+                  <line class="trail" x1="180.0" y1="384.0" x2="180.0" y2="364.0" />
+                  <line class="spark" x1="181.9" y1="354.3" x2="185.5" y2="358.5" />
+                  <line class="spark" x1="180.0" y1="355.0" x2="180.0" y2="360.5" />
+                  <line class="spark" x1="178.1" y1="354.3" x2="174.5" y2="358.5" />
+                  <g transform="translate(180.0 402.0)"><circle r="15" class="badge" /><path d="M -8.5 9 C -8.5 -2 -5 -9.5 0 -9.5 C 5 -9.5 8.5 -2 8.5 9 Z" class="tf" /><ellipse cx="0" cy="0.5" rx="4.4" ry="5.2" fill="#fff" /><rect x="-3.2" y="-0.8" width="2.4" height="1.4" rx=".6" class="tf" /><rect x="0.8" y="-0.8" width="2.4" height="1.4" rx=".6" class="tf" /></g>
+                  <text class="threat-label" x="180.0" y="433.0" text-anchor="middle">해킹</text>
+                  <line class="trail" x1="324.2" y1="324.2" x2="310.1" y2="310.1" />
+                  <line class="spark" x1="304.6" y1="301.9" x2="310.1" y2="302.4" />
+                  <line class="spark" x1="303.7" y1="303.7" x2="307.6" y2="307.6" />
+                  <line class="spark" x1="301.9" y1="304.6" x2="302.4" y2="310.1" />
+                  <g transform="translate(337.0 337.0)"><circle r="15" class="badge" /><path d="M -3.6 -1.5 V -4.5 a 3.6 3.6 0 0 1 7.2 0 V -1.5" fill="none" class="ts" stroke-width="2.2" /><rect x="-6.5" y="-1.5" width="13" height="10" rx="2" class="tf" /><circle cx="0" cy="2.6" r="1.4" fill="#fff" /><rect x="-.6" y="3" width="1.2" height="3" fill="#fff" /></g>
+                  <text class="threat-label" x="337.0" y="368.0" text-anchor="middle">랜섬웨어</text>
+                </g>
+
+                <g class="ring grow g1" data-key="edge">
+                  <circle cx="180" cy="180" r="172" fill="#DCE7F5" />
+                  <text class="ring-label" fill="#2E5A9A"><textPath href="#arc1" startOffset="50%" text-anchor="middle">경계·네트워크 보안</textPath></text>
+                </g>
+                <g class="ring grow g2" data-key="access">
+                  <circle cx="180" cy="180" r="142" fill="#AFC6E8" />
+                  <text class="ring-label" fill="#1F4479"><textPath href="#arc2" startOffset="50%" text-anchor="middle">접근통제·계정관리</textPath></text>
+                </g>
+                <g class="ring grow g3" data-key="vuln">
+                  <circle cx="180" cy="180" r="112" fill="#6F95CF" />
+                  <text class="ring-label" fill="#fff"><textPath href="#arc3" startOffset="50%" text-anchor="middle">취약점 진단</textPath></text>
+                </g>
+                <g class="ring grow g4" data-key="vdi">
+                  <circle cx="180" cy="180" r="82" fill="#2E5A9A" />
+                  <text class="ring-label" fill="#fff"><textPath href="#arc4" startOffset="50%" text-anchor="middle">데스크톱 가상화</textPath></text>
+                </g>
+                <!-- 핵심: 업무 데이터 -->
+                <g class="grow g5" aria-hidden="true">
+                  <circle cx="180" cy="180" r="38" fill="#142A4C" />
+                  <text class="core-text" x="180" y="176">업무</text>
+                  <text class="core-text" x="180" y="192">데이터</text>
+                </g>
+              </svg>
+
+              <!-- 영역 목록 -->
+              <ul class="smp-list">
+                <li class="smp-item" data-key="edge">
+                  <a href="#solutions" data-filter="network">
+                    <span class="smp-swatch" style="background:#DCE7F5"></span>
+                    <span>
+                      <span class="smp-cat">경계·네트워크 보안</span>
+                      <span class="smp-name">망연계, SSL VPN, 웹방화벽</span>
+                      <span class="smp-desc"><b>한싹, 시큐위즈, 파이오링크</b> 기반 망분리 파일 전송, 원격근무 암호화 접속, 웹 해킹 방어</span>
+                    </span>
+                    <span class="smp-count">제품 3개<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3l5 5-5 5" /></svg></span>
+                  </a>
+                </li>
+                <li class="smp-item" data-key="access">
+                  <a href="#solutions" data-filter="access">
+                    <span class="smp-swatch" style="background:#AFC6E8"></span>
+                    <span>
+                      <span class="smp-cat">접근통제·계정관리</span>
+                      <span class="smp-name">NAC, 시스템 접근제어</span>
+                      <span class="smp-desc"><b>지니언스, 휴네시온</b> 기반 사내 접속 단말 통제, 서버·네트워크 접근 권한과 작업 이력 감사</span>
+                    </span>
+                    <span class="smp-count">제품 2개<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3l5 5-5 5" /></svg></span>
+                  </a>
+                </li>
+                <li class="smp-item" data-key="vuln">
+                  <a href="#solutions" data-filter="vuln">
+                    <span class="smp-swatch" style="background:#6F95CF"></span>
+                    <span>
+                      <span class="smp-cat">취약점 진단</span>
+                      <span class="smp-name">웹·서버 취약점 진단</span>
+                      <span class="smp-desc"><b>나일소프트</b> 기반 주요정보통신기반시설 및 OWASP 기준 웹·인프라 취약점 자동 점검</span>
+                    </span>
+                    <span class="smp-count">제품 2개<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3l5 5-5 5" /></svg></span>
+                  </a>
+                </li>
+                <li class="smp-item" data-key="vdi">
+                  <a href="#solutions" data-filter="vdi">
+                    <span class="smp-swatch" style="background:#2E5A9A"></span>
+                    <span>
+                      <span class="smp-cat">데스크톱 가상화</span>
+                      <span class="smp-name">데스크톱 가상화(VDI)</span>
+                      <span class="smp-desc"><b>틸론</b> 기반 중앙 집중형 가상 데스크톱으로 정보 유출을 원천 차단하고 스마트워크 구현</span>
+                    </span>
+                    <span class="smp-count">제품 1개<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3l5 5-5 5" /></svg></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <footer class="smp-foot">
+              <span>영업 문의<a href="mailto:sales@smpeoples.kr">sales@smpeoples.kr</a></span>
+              <span>기술 문의<a href="mailto:tech@smpeoples.kr">tech@smpeoples.kr</a></span>
+            </footer>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 공식 파트너 벤더사 바: 에스엠피플스㈜가 함께하는 7대 대표 제조사를 첫 화면 직후에 명확히 제시 -->
+    <div class="partner-bar" id="vendors">
+      <div class="container">
+        <div class="partner-bar-inner">
+          <div class="partner-bar-head">
+            <span class="partner-bar-title">
+              <strong>공식 파트너 벤더사</strong> · 로고를 클릭하면 각 제조사 공식 홈페이지로 이동합니다
+            </span>
+          </div>
+          <div class="vendor-links-grid">
+            <a href="https://www.hanssak.co.kr/" target="_blank" rel="noopener noreferrer"
+              class="vendor-partner-card">
+              <img src="images/제품소개서/한싹/hanssak0.png" alt="한싹" />
+              <span>한싹 (망연계)</span>
+            </a>
+            <a href="https://www.secuwiz.co.kr" target="_blank" rel="noopener noreferrer" class="vendor-partner-card">
+              <img src="images/제품소개서/시큐위즈/secuwiz0.png" alt="시큐위즈" />
+              <span>시큐위즈 (SSL VPN)</span>
+            </a>
+            <a href="https://www.piolink.com/kr/" target="_blank" rel="noopener noreferrer" class="vendor-partner-card">
+              <img src="images/제품소개서/파이오링크/piolink0.png" alt="파이오링크" />
+              <span>파이오링크 (웹방화벽)</span>
+            </a>
+            <a href="http://www.nilesoft.co.kr/" target="_blank" rel="noopener noreferrer" class="vendor-partner-card">
+              <img src="images/제품소개서/나일/nile0.png" alt="나일소프트" />
+              <span>나일소프트 (취약점진단)</span>
+            </a>
+            <a href="https://www.genians.co.kr/" target="_blank" rel="noopener noreferrer" class="vendor-partner-card">
+              <img src="images/제품소개서/지니언스/Genians0.png" alt="지니언스" />
+              <span>지니언스 (NAC)</span>
+            </a>
+            <a href="https://www.hunesion.com/" target="_blank" rel="noopener noreferrer" class="vendor-partner-card">
+              <img src="images/제품소개서/휴네시온/hu.png" alt="휴네시온" />
+              <span>휴네시온 (시스템접근제어)</span>
+            </a>
+            <a href="https://www.tilon.com/" target="_blank" rel="noopener noreferrer" class="vendor-partner-card">
+              <img src="images/제품소개서/틸론/ti.png" alt="틸론" />
+              <span>틸론 (데스크톱가상화)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. 회사소개 (#about): 기존 원문 인사말 100% 보존 + 기업 개요 표 + 4대 핵심 가치 -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">COMPANY OVERVIEW</span>
+          <h2 class="section-title">회사<span>소개</span></h2>
+          <p class="section-desc">
+            정보보안의 최전선에서 고객의 안전과 신뢰를 지키는 에스엠피플스㈜의 비전과 핵심 역량입니다.
+          </p>
+        </div>
+
+        <div class="about-layout">
+          <!-- 좌측: 원문 인사말 100% 보존 + 기업 기본 정보 요약 -->
+          <div class="about-original-card">
+            <div>
+              <div class="about-original-badge">
+                <span>Security Managing Peoples · 기업 인사말</span>
+              </div>
+              <div class="about-original-body">
+                <p>
+                  <span>에스엠피플스㈜</span>에 방문해 주셔서 감사합니다.
+                </p>
+                <p>
+                  우리는 정보보안의 최전선에서 고객의 안전과 신뢰를 지키기 위해 헌신하는 전문가들로 구성된 팀입니다.
+                </p>
+                <p>
+                  오늘날의 디지털 환경은 끊임없이 변화하고 있으며, 우리는 이러한 변화에 적응하고 선제적으로 대응하기 위해 최신 기술과 전략을 채택하고 있습니다.
+                </p>
+                <p>
+                  우리의 목표는 고객에게 최상의 보안 솔루션을 제공하여 소중한 정보를 안전하게 보호하는 것입니다.
+                </p>
+                <p>
+                  고객의 안전은 우리의 최우선 과제입니다. 에스엠피플스와 함께 더 안전한 미래를 만들어 가십시오.
+                </p>
+                <p>
+                  <span>감사합니다.</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="company-facts-grid">
+              <div class="fact-item">
+                <span class="fact-label">법인명 / 슬로건</span>
+                <span class="fact-val">에스엠피플스㈜ (Security Managing Peoples)</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">주요 사업 분야</span>
+                <span class="fact-val">정보보호 솔루션 공급 · 구축 · 기술지원</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">본사 (수도권 거점)</span>
+                <span class="fact-val">경기도 고양시 덕양구 청초로 66 B동 1619, 1607호</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">지사 (중부권 거점)</span>
+                <span class="fact-val">대전시 대덕구 대화동 611 가온비즈타워 1124호</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 우측: 고객이 한눈에 파악하는 에스엠피플스㈜ 4대 경쟁력 -->
+          <div class="about-pillars-grid">
+            <div class="pillar-card">
+              <div class="pillar-num">01</div>
+              <h3>정보보안 전문가 그룹</h3>
+              <p>
+                정보보안의 최전선에서 고객의 안전과 신뢰를 지키기 위해 헌신하는 전문 엔지니어 및 보안 컨설팅 인력으로 구성되어 있습니다.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-num">02</div>
+              <h3>선제적 기술과 대응 전략</h3>
+              <p>
+                급변하는 디지털 환경과 고도화되는 보안 위협에 맞춰 최신 보안 아키텍처와 컴플라이언스 대응 전략을 선제적으로 제안합니다.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-num">03</div>
+              <h3>검증된 솔루션 라인업</h3>
+              <p>
+                망연계, SSL VPN, 웹방화벽, 취약점 진단, NAC, 시스템 접근제어, VDI까지 CC인증·GS인증·보안기능확인서를 갖춘 최상위 제품을 공급합니다.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-num">04</div>
+              <h3>고객 안전 최우선 기술지원</h3>
+              <p>
+                도입 상담부터 현장 구축, 운영 유지보수까지 고양 본사와 대전 지사를 통해 빠르고 책임감 있는 밀착 기술지원을 수행합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. 보안 솔루션 (#solutions): 요청하신 다크네이비+민트 카드 디자인 + 8대 솔루션 비교 일람표 -->
+    <section class="section section-white" id="solutions">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">SECURITY SOLUTIONS</span>
+          <h2 class="section-title">취급 <span>보안 솔루션</span> (제품소개)</h2>
+          <p class="section-desc">
+            에스엠피플스㈜가 공급·구축하는 핵심 정보보호 솔루션입니다. 각 카드의 <strong>소개서 미리보기</strong>를 누르면 페이지 이동 없이 브로셔를 바로 열람할 수 있습니다.
+          </p>
+        </div>
+
+        <!-- 단일 필터 탭 + 검색창 -->
+        <div class="solutions-toolbar">
+          <div class="filter-tabs" role="tablist" aria-label="솔루션 분야별 필터">
+            <button type="button" class="filter-tab active" data-category="all">전체 솔루션 (8)</button>
+            <button type="button" class="filter-tab" data-category="network">경계·네트워크 보안 (3)</button>
+            <button type="button" class="filter-tab" data-category="access">접근통제·계정관리 (2)</button>
+            <button type="button" class="filter-tab" data-category="vuln">취약점 진단 (2)</button>
+            <button type="button" class="filter-tab" data-category="vdi">데스크톱 가상화 (1)</button>
+          </div>
+
+          <div class="search-box">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <path d="M21 21l-4.3-4.3" stroke-linecap="round" />
+            </svg>
+            <input type="search" id="solutionSearch" placeholder="솔루션명, 제품명, 제조사 검색..." aria-label="솔루션 검색" />
+          </div>
+        </div>
+
+        <!-- 8대 보안 솔루션 카드 그리드 -->
+        <div class="solutions-grid" id="solutionsGrid">
+          <!-- 1. 망연계 솔루션 (한싹) -->
+          <article class="solution-card" data-id="hanssak" data-category="network"
+            data-keywords="망연계 솔루션 한싹 hanssak securegate 시큐어게이트 망분리 파일전송 스트림연계">
+            <div>
+              <div class="solution-card-top">
+                <span class="solution-category-badge">경계·네트워크 보안</span>
+                <div class="vendor-logo-box">
+                  <img src="images/제품소개서/한싹/hanssak0.png" alt="한싹 로고" />
+                </div>
+              </div>
+              <h3 class="solution-title">망연계 솔루션</h3>
+              <div class="solution-vendor-row">
+                <span>한싹 (Hanssak)</span>
+                <span>·</span>
+                <span class="solution-product-name">SecureGate V3.5</span>
+              </div>
+              <p class="solution-desc">
+                망분리 환경에서 업무망과 인터넷망 사이의 파일 전송과 실시간 서버 스트림 연계를 안전하게 처리하는 3세대 망연계 솔루션입니다.
+              </p>
+              <ul class="solution-features">
+                <li>Non-TCP/IP 전용 프로토콜로 분리된 망 간 자료·스트림 연계</li>
+                <li>악성코드·랜섬웨어 검사, 위변조 검증, 개인정보 탐지와 승인 결재 연동</li>
+                <li>CC인증 EAL4·GS인증 1등급으로 공공·금융·기업 망분리 규정 충족</li>
+              </ul>
+            </div>
+            <div class="solution-actions">
+              <button type="button" class="btn btn-primary btn-sm btn-preview-pdf" data-title="망연계 솔루션" data-vendor="한싹"
+                data-pdf="images/제품소개서/한싹/SecureGateV3.5.pdf">
+                소개서 미리보기
+              </button>
+              <a href="images/제품소개서/한싹/SecureGateV3.5.pdf" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-sm">
+                PDF 다운로드
+              </a>
+            </div>
+          </article>
+
+          <!-- 2. SSL VPN (시큐위즈) -->
+          <article class="solution-card" data-id="secuwiz" data-category="network"
+            data-keywords="ssl vpn 시큐위즈 secuwiz secuwayssl 가상사설망 원격근무 재택근무 암호화통신">
+            <div>
+              <div class="solution-card-top">
+                <span class="solution-category-badge">경계·네트워크 보안</span>
+                <div class="vendor-logo-box">
+                  <img src="images/제품소개서/시큐위즈/secuwiz0.png" alt="시큐위즈 로고" />
+                </div>
+              </div>
+              <h3 class="solution-title">SSL VPN</h3>
+              <div class="solution-vendor-row">
+                <span>시큐위즈 (Secuwiz)</span>
+                <span>·</span>
+                <span class="solution-product-name">SecuwaySSL U Series</span>
+              </div>
+              <p class="solution-desc">
+                원격·재택근무자가 외부에서 사내 내부 네트워크에 안전하게 접속할 수 있도록 고성능 암호화 통신과 사용자 인증을 제공하는 SSL VPN 솔루션입니다.
+              </p>
+              <ul class="solution-features">
+                <li>국가검증 암호모듈(KCMVP) 및 자체 고속 프로토콜 기반 안전한 원격 접속</li>
+                <li>PC·모바일 멀티 플랫폼 지원 및 2차 인증·단말 무결성 검증</li>
+                <li>CC인증·GS인증 획득 및 직관적인 사용자·접근권한 통합 정책 관리</li>
+              </ul>
+            </div>
+            <div class="solution-actions">
+              <button type="button" class="btn btn-primary btn-sm btn-preview-pdf" data-title="SSL VPN"
+                data-vendor="시큐위즈" data-pdf="images/제품소개서/시큐위즈/시큐위즈-제품소개서.pdf">
+                소개서 미리보기
+              </button>
+              <a href="images/제품소개서/시큐위즈/시큐위즈-제품소개서.pdf" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-sm">
+                PDF 다운로드
+              </a>
+            </div>
+          </article>
+
+          <!-- 3. 웹방화벽 (파이오링크) -->
+          <article class="solution-card" data-id="piolink" data-category="network"
+            data-keywords="웹방화벽 waf 파이오링크 piolink webfront-k 웹보안 owasp api보안">
+            <div>
+              <div class="solution-card-top">
+                <span class="solution-category-badge">경계·네트워크 보안</span>
+                <div class="vendor-logo-box">
+                  <img src="images/제품소개서/파이오링크/piolink0.png" alt="파이오링크 로고" />
+                </div>
+              </div>
+              <h3 class="solution-title">웹방화벽</h3>
+              <div class="solution-vendor-row">
+                <span>파이오링크 (PIOLINK)</span>
+                <span>·</span>
+                <span class="solution-product-name">WEBFRONT-K</span>
+              </div>
+              <p class="solution-desc">
+                고성능 하드웨어 플랫폼과 지능형 보안 엔진을 결합해 웹 애플리케이션 취약점 공격, 정보 유출, 악성 봇(Bot) 위협을 실시간 탐지·차단하는 웹방화벽입니다.
+              </p>
+              <ul class="solution-features">
+                <li>OWASP Top 10 및 국정원 8대 웹 취약점 공격 실시간 탐지·차단</li>
+                <li>고성능 SSL/TLS 암·복호화 가속 및 API 보안·악성 봇 완화 지원</li>
+                <li>무중단 웹 서비스 가용성을 보장하는 고신뢰성 이중화 아키텍처</li>
+              </ul>
+            </div>
+            <div class="solution-actions">
+              <button type="button" class="btn btn-primary btn-sm btn-preview-pdf" data-title="웹방화벽" data-vendor="파이오링크"
+                data-pdf="images/제품소개서/파이오링크/WAF.pdf">
+                소개서 미리보기
+              </button>
+              <a href="images/제품소개서/파이오링크/WAF.pdf" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-sm">
+                PDF 다운로드
+              </a>
+            </div>
+          </article>
+
+          <!-- 4. 웹 취약점진단 (나일소프트) -->
+          <article class="solution-card" data-id="nile-wse" data-category="vuln"
+            data-keywords="웹 취약점진단 나일소프트 nilesoft wse secuguard 웹취약점 점검 진단">
+            <div>
+              <div class="solution-card-top">
+                <span class="solution-category-badge">취약점 진단</span>
+                <div class="vendor-logo-box">
+                  <img src="images/제품소개서/나일/nile0.png" alt="나일소프트 로고" />
+                </div>
+              </div>
+              <h3 class="solution-title">웹 취약점진단</h3>
+              <div class="solution-vendor-row">
+                <span>나일소프트 (Nilesoft)</span>
+                <span>·</span>
+                <span class="solution-product-name">SecuGuard WSE</span>
+              </div>
+              <p class="solution-desc">
+                웹사이트와 웹 애플리케이션의 잠재적 보안 취약점을 자동으로 수집·분석하여 해킹 사고를 사전 예방하고 컴플라이언스 준수를 돕는 진단 솔루션입니다.
+              </p>
+              <ul class="solution-features">
+                <li>주요정보통신기반시설·전자금융·OWASP Top 10·국정원 8대 취약점 기준 지원</li>
+                <li>고속 자동 크롤링과 정밀 모의해킹 시뮬레이션으로 오탐 최소화</li>
+                <li>취약점별 상세 조치 가이드 및 규정 맞춤형 진단 보고서 자동 생성</li>
+              </ul>
+            </div>
+            <div class="solution-actions">
+              <button type="button" class="btn btn-primary btn-sm btn-preview-pdf" data-title="웹 취약점진단"
+                data-vendor="나일소프트" data-pdf="images/제품소개서/나일/WSE.pdf">
+                소개서 미리보기
+              </button>
+              <a href="images/제품소개서/나일/WSE.pdf" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-sm">
+                PDF 다운로드
+              </a>
+            </div>
+          </article>
+
+          <!-- 5. 서버 취약점진단 (나일소프트) -->
+          <article class="solution-card" data-id="nile-sse" data-category="vuln"
+            data-keywords="서버 취약점진단 나일소프트 nilesoft sse secuguard 인프라 cce 취약점 점검">
+            <div>
+              <div class="solution-card-top">
+                <span class="solution-category-badge">취약점 진단</span>
+                <div class="vendor-logo-box">
+                  <img src="images/제품소개서/나일/nile0.png" alt="나일소프트 로고" />
+                </div>
+              </div>
+              <h3 class="solution-title">서버 취약점진단</h3>
+              <div class="solution-vendor-row">
+                <span>나일소프트 (Nilesoft)</span>
+                <span>·</span>
+                <span class="solution-product-name">SecuGuard SSE</span>
+              </div>
+              <p class="solution-desc">
+                서버(OS), 데이터베이스(DBMS), 미들웨어(WAS), 네트워크·보안장비 등 IT 인프라 전반의 보안 설정 취약점을 자동 진단하고 이력을 통합 관리합니다.
+              </p>
+              <ul class="solution-features">
+                <li>주요정보통신기반시설·금융보안원·ISMS-P 등 컴플라이언스 기준 기본 탑재</li>
+                <li>이기종 대량 서버·DBMS·네트워크 장비 일괄 자동 점검 및 상시 감사</li>
+                <li>취약점 원인 분석과 시스템별 맞춤 조치 방법 및 이력 비교 리포트 제공</li>
+              </ul>
+            </div>
+            <div class="solution-actions">
+              <button type="button" class="btn btn-primary btn-sm btn-preview-pdf" data-title="서버 취약점진단"
+                data-vendor="나일소프트" data-pdf="images/제품소개서/나일/SSE.pdf">
+                소개서 미리보기
+              </button>
+              <a href="images/제품소개서/나일/SSE.pdf" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-sm">
+                PDF 다운로드
+              </a>
+            </div>
+          </article>
+
+          <!-- 6. NAC (지니언스) -->
+          <article class="solution-card" data-id="genians" data-category="access"
+            data-keywords="nac 지니언스 genians 네트워크 접근제어 단말통제 ip관리 제로트러스트">
+            <div>
+              <div class="solution-card-top">
+                <span class="solution-category-badge">접근통제·계정관리</span>
+                <div class="vendor-logo-box">
+                  <img src="images/제품소개서/지니언스/Genians0.png" alt="지니언스 로고" />
+                </div>
+              </div>
+              <h3 class="solution-title">NAC</h3>
+              <div class="solution-vendor-row">
+                <span>지니언스 (Genians)</span>
+                <span>·</span>
+                <span class="solution-product-name">Genian NAC</span>
+              </div>
+              <p class="solution-desc">
+                네트워크에 접속하는 모든 단말(PC, 노트북, 모바일, IoT)을 실시간 탐지·식별하고 인가 여부 및 보안 정책 준수 상태에 따라 네트워크 접근을 통제합니다.
+              </p>
+              <ul class="solution-features">
+                <li>단말 플랫폼 인텔리전스 기반 네트워크 내 모든 IP·자산 실시간 가시성 확보</li>
+                <li>비인가 단말 자동 차단 및 사용자·부서별 동적 네트워크 접근권한 제어</li>
+                <li>필수 보안 SW 설치·패치·화면보호기 등 단말 보안 정책 강제화 및 IP 관리</li>
+              </ul>
+            </div>
+            <div class="solution-actions">
+              <button type="button" class="btn btn-primary btn-sm btn-preview-pdf" data-title="NAC" data-vendor="지니언스"
+                data-pdf="images/제품소개서/지니언스/NAC.pdf">
+                소개서 미리보기
+              </button>
+              <a href="images/제품소개서/지니언스/NAC.pdf" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-sm">
+                PDF 다운로드
+              </a>
+            </div>
+          </article>
+
+          <!-- 7. 시스템 접근제어 (휴네시온) -->
+          <article class="solution-card" data-id="hunesion" data-category="access"
+            data-keywords="시스템 접근제어 휴네시온 hunesion ngs 계정관리 패스워드관리 서버접근통제 감사">
+            <div>
+              <div class="solution-card-top">
+                <span class="solution-category-badge">접근통제·계정관리</span>
+                <div class="vendor-logo-box">
+                  <img src="images/제품소개서/휴네시온/hu.png" alt="휴네시온 로고" />
+                </div>
+              </div>
+              <h3 class="solution-title">시스템 접근제어</h3>
+              <div class="solution-vendor-row">
+                <span>휴네시온 (Hunesion)</span>
+                <span>·</span>
+                <span class="solution-product-name">NGS</span>
+              </div>
+              <p class="solution-desc">
+                서버·네트워크·보안장비 등 핵심 시스템에 접속하는 내부 및 외주 인력의 접근 권한을 통제하고 모든 작업 내역을 실시간 모니터링·감사하는 솔루션입니다.
+              </p>
+              <ul class="solution-features">
+                <li>SSH, Telnet, RDP, SFTP, 웹 콘솔 등 주요 프로토콜 접근통제 및 명령어 제어</li>
+                <li>특권 계정(Root/Admin) 패스워드 자동 변경 및 워크플로우 권한 승인</li>
+                <li>모든 작업 세션 실시간 모니터링 및 동영상·텍스트 감사 로그 완벽 기록</li>
+              </ul>
+            </div>
+            <div class="solution-actions">
+              <button type="button" class="btn btn-primary btn-sm btn-preview-pdf" data-title="시스템 접근제어"
+                data-vendor="휴네시온" data-pdf="images/제품소개서/휴네시온/NGS.pdf">
+                소개서 미리보기
+              </button>
+              <a href="images/제품소개서/휴네시온/NGS.pdf" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-sm">
+                PDF 다운로드
+              </a>
+            </div>
+          </article>
+
+          <!-- 8. 데스크톱 가상화 (틸론) -->
+          <article class="solution-card" data-id="tilon" data-category="vdi"
+            data-keywords="데스크톱 가상화 틸론 tilon dstation vdi 클라우드 망분리 가상데스크톱">
+            <div>
+              <div class="solution-card-top">
+                <span class="solution-category-badge">데스크톱 가상화</span>
+                <div class="vendor-logo-box">
+                  <img src="images/제품소개서/틸론/ti.png" alt="틸론 로고" />
+                </div>
+              </div>
+              <h3 class="solution-title">데스크톱 가상화</h3>
+              <div class="solution-vendor-row">
+                <span>틸론 (Tilon)</span>
+                <span>·</span>
+                <span class="solution-product-name">Dstation v9.0</span>
+              </div>
+              <p class="solution-desc">
+                중앙 서버에서 가상 데스크톱(VDI) 환경을 통합 제공하여 중요 업무 데이터를 개인 단말에 남기지 않고 안전하고 쾌적한 업무 환경을 구현합니다.
+              </p>
+              <ul class="solution-features">
+                <li>국정원 보안기능확인서 획득으로 최고 수준의 VDI 보안성·무결성 보장</li>
+                <li>독자 프로토콜(ATC) 기반 고화질 그래픽·동영상 처리 및 뛰어난 체감 속도</li>
+                <li>논리적 망분리 및 스마트워크·재택근무 환경의 중앙 집중식 통합 운영</li>
+              </ul>
+            </div>
+            <div class="solution-actions">
+              <button type="button" class="btn btn-primary btn-sm btn-preview-pdf" data-title="데스크톱 가상화"
+                data-vendor="틸론" data-pdf="images/제품소개서/틸론/ti.pdf">
+                소개서 미리보기
+              </button>
+              <a href="images/제품소개서/틸론/ti.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                PDF 다운로드
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div id="solutionEmptyState" style="display:none;text-align:center;padding:48px 20px;color:#64748b;">
+          조건에 일치하는 솔루션이 없습니다. 검색어나 필터를 초기화해 주세요.
+        </div>
+
+        <!-- 한눈에 비교하는 8대 보안 솔루션 요약 일람표 -->
+        <div class="comparison-block" id="comparisonMatrix">
+          <div class="comparison-header">
+            <div>
+              <h3>한눈에 비교하는 보안 솔루션 일람표</h3>
+              <p>도입 목적과 제조사·제품명·인증 기준을 한 표에서 비교하고 브로셔를 바로 열람할 수 있습니다.</p>
+            </div>
+            <span class="table-scroll-hint">↔ 좌우로 밀어서 표 전체 보기</span>
+          </div>
+          <div class="comparison-table-wrap">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>보안 영역</th>
+                  <th>솔루션</th>
+                  <th>벤더사 (제품명)</th>
+                  <th>핵심 도입 목적 및 보호 대상</th>
+                  <th>주요 인증 · 준수 기준</th>
+                  <th>브로셔</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="table-cat-pill">경계·네트워크</span></td>
+                  <td><strong>망연계 솔루션</strong></td>
+                  <td>한싹 (SecureGate V3.5)</td>
+                  <td>망분리 환경 내 업무망↔인터넷망 간 안전한 파일 전송 및 서버 스트림 연계</td>
+                  <td>CC인증 EAL4, GS 1등급</td>
+                  <td>
+                    <button type="button" class="btn btn-outline btn-sm btn-preview-pdf" data-title="망연계 솔루션"
+                      data-vendor="한싹" data-pdf="images/제품소개서/한싹/SecureGateV3.5.pdf">열람</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="table-cat-pill">경계·네트워크</span></td>
+                  <td><strong>SSL VPN</strong></td>
+                  <td>시큐위즈 (SecuwaySSL U)</td>
+                  <td>원격·재택근무 시 사내 내부망 암호화 터널 접속 및 사용자·단말 인증</td>
+                  <td>CC인증, GS인증, KCMVP</td>
+                  <td>
+                    <button type="button" class="btn btn-outline btn-sm btn-preview-pdf" data-title="SSL VPN"
+                      data-vendor="시큐위즈" data-pdf="images/제품소개서/시큐위즈/시큐위즈-제품소개서.pdf">열람</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="table-cat-pill">경계·네트워크</span></td>
+                  <td><strong>웹방화벽</strong></td>
+                  <td>파이오링크 (WEBFRONT-K)</td>
+                  <td>웹 애플리케이션 해킹 방어, SSL 가속, API 보호 및 악성 봇(Bot) 차단</td>
+                  <td>OWASP Top 10, 국정원 8대 취약점</td>
+                  <td>
+                    <button type="button" class="btn btn-outline btn-sm btn-preview-pdf" data-title="웹방화벽"
+                      data-vendor="파이오링크" data-pdf="images/제품소개서/파이오링크/WAF.pdf">열람</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="table-cat-pill">취약점 진단</span></td>
+                  <td><strong>웹 취약점진단</strong></td>
+                  <td>나일소프트 (SecuGuard WSE)</td>
+                  <td>웹사이트·웹서비스 보안 취약점 자동 크롤링 진단 및 조치 가이드 리포트</td>
+                  <td>주요정보통신기반시설, 전자금융</td>
+                  <td>
+                    <button type="button" class="btn btn-outline btn-sm btn-preview-pdf" data-title="웹 취약점진단"
+                      data-vendor="나일소프트" data-pdf="images/제품소개서/나일/WSE.pdf">열람</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="table-cat-pill">취약점 진단</span></td>
+                  <td><strong>서버 취약점진단</strong></td>
+                  <td>나일소프트 (SecuGuard SSE)</td>
+                  <td>OS·DBMS·WAS·네트워크 장비 환경설정 취약점 일괄 자동 점검 및 이력 관리</td>
+                  <td>주요정보통신기반시설, ISMS-P</td>
+                  <td>
+                    <button type="button" class="btn btn-outline btn-sm btn-preview-pdf" data-title="서버 취약점진단"
+                      data-vendor="나일소프트" data-pdf="images/제품소개서/나일/SSE.pdf">열람</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="table-cat-pill">접근통제·계정</span></td>
+                  <td><strong>NAC</strong></td>
+                  <td>지니언스 (Genian NAC)</td>
+                  <td>네트워크 접속 단말(PC·IoT) 가시성 확보, 비인가 단말 차단 및 보안정책 강제</td>
+                  <td>국내 시장점유율 1위, CC인증</td>
+                  <td>
+                    <button type="button" class="btn btn-outline btn-sm btn-preview-pdf" data-title="NAC"
+                      data-vendor="지니언스" data-pdf="images/제품소개서/지니언스/NAC.pdf">열람</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="table-cat-pill">접근통제·계정</span></td>
+                  <td><strong>시스템 접근제어</strong></td>
+                  <td>휴네시온 (NGS)</td>
+                  <td>서버·네트워크 특권 계정 패스워드 관리, 접속 권한 통제 및 작업 세션 감사</td>
+                  <td>보안기능확인서, GS 1등급</td>
+                  <td>
+                    <button type="button" class="btn btn-outline btn-sm btn-preview-pdf" data-title="시스템 접근제어"
+                      data-vendor="휴네시온" data-pdf="images/제품소개서/휴네시온/NGS.pdf">열람</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="table-cat-pill">데스크톱 가상화</span></td>
+                  <td><strong>데스크톱 가상화</strong></td>
+                  <td>틸론 (Dstation v9.0)</td>
+                  <td>중앙 서버 기반 가상 데스크톱(VDI) 제공으로 자료 유출 방지 및 스마트워크 구현</td>
+                  <td>국정원 보안기능확인서 1호</td>
+                  <td>
+                    <button type="button" class="btn btn-outline btn-sm btn-preview-pdf" data-title="데스크톱 가상화"
+                      data-vendor="틸론" data-pdf="images/제품소개서/틸론/ti.pdf">열람</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. 보안뉴스 (#news): 기존 5건 보안뉴스·KISA 권고문을 깔끔한 카드 보드 형태로 정돈 -->
+    <section class="section section-alt" id="news">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">SECURITY ADVISORIES &amp; NEWS</span>
+          <h2 class="section-title">보안<span>뉴스</span> 및 보안 권고</h2>
+          <p class="section-desc">
+            한국인터넷진흥원(KISA) 보안 권고문 및 주요 사이버 보안 위협 소식을 안내합니다. 클릭 시 원문 공지로 이동합니다.
+          </p>
+        </div>
+
+        <div class="news-grid">
+          <a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=71167"
+            target="_blank" rel="noopener noreferrer" class="news-card">
+            <div>
+              <div class="news-card-head">
+                <span class="news-source-pill">KISA 보안공지</span>
+                <img src="images/kisa.png" alt="KISA" class="news-mini-logo" />
+              </div>
+              <h3 class="news-title" style="margin-top:14px;">MS 8월 보안 위협에 따른 정기 보안 업데이트 권고</h3>
+              <p class="news-excerpt">
+                Microsoft 주요 제품의 원격 코드 실행 및 권한 상승 취약점에 대응하기 위한 최신 정기 보안 패치 적용 권고 안내입니다.
+              </p>
+            </div>
+            <div class="news-meta">
+              <span>출처: KISA 보호나라</span>
+              <span class="news-link-text">원문 보기 →</span>
+            </div>
+          </a>
+
+          <a href="https://www.boannews.com/media/view.asp?idx=120762" target="_blank" rel="noopener noreferrer"
+            class="news-card">
+            <div>
+              <div class="news-card-head">
+                <span class="news-source-pill">보안뉴스</span>
+                <span style="font-size:0.78rem;font-weight:700;color:#64748b;">취약점 경보</span>
+              </div>
+              <h3 class="news-title" style="margin-top:14px;">시트릭스 코드 주입 취약점</h3>
+              <p class="news-excerpt">
+                원격 접속 및 가상화 인프라 환경에서 발생할 수 있는 코드 주입(Code Injection) 보안 취약점 분석 및 보안 패치 권고 소식입니다.
+              </p>
+            </div>
+            <div class="news-meta">
+              <span>출처: 보안뉴스</span>
+              <span class="news-link-text">원문 보기 →</span>
+            </div>
+          </a>
+
+          <a href="https://www.boannews.com/media/view.asp?idx=120727" target="_blank" rel="noopener noreferrer"
+            class="news-card">
+            <div>
+              <div class="news-card-head">
+                <span class="news-source-pill">보안뉴스</span>
+                <span style="font-size:0.78rem;font-weight:700;color:#64748b;">보안 위협 분석</span>
+              </div>
+              <h3 class="news-title" style="margin-top:14px;">부채널 공격 기법 발견돼</h3>
+              <p class="news-excerpt">
+                시스템 하드웨어 및 연산 과정에서 발생하는 물리적·시간적 특성을 이용한 신종 부채널(Side-Channel) 공격 기법 관련 보도입니다.
+              </p>
+            </div>
+            <div class="news-meta">
+              <span>출처: 보안뉴스</span>
+              <span class="news-link-text">원문 보기 →</span>
+            </div>
+          </a>
+
+          <a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=71160"
+            target="_blank" rel="noopener noreferrer" class="news-card">
+            <div>
+              <div class="news-card-head">
+                <span class="news-source-pill">KISA 보안공지</span>
+                <img src="images/제품소개서/지니언스/Genians0.png" alt="지니언스" class="news-mini-logo" />
+              </div>
+              <h3 class="news-title" style="margin-top:14px;">지니언스 NAC 보안 업데이트 권고</h3>
+              <p class="news-excerpt">
+                네트워크 접근제어(NAC) 솔루션 운영 환경의 보안성 강화를 위한 최신 보안 업데이트 적용 권고 사항입니다.
+              </p>
+            </div>
+            <div class="news-meta">
+              <span>출처: KISA 보호나라</span>
+              <span class="news-link-text">원문 보기 →</span>
+            </div>
+          </a>
+
+          <a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=71129"
+            target="_blank" rel="noopener noreferrer" class="news-card">
+            <div>
+              <div class="news-card-head">
+                <span class="news-source-pill">KISA 보안공지</span>
+                <img src="images/news/fortinet.jpg" alt="Fortinet" class="news-mini-logo" />
+              </div>
+              <h3 class="news-title" style="margin-top:14px;">Fortinet 보안 업데이트 권고</h3>
+              <p class="news-excerpt">
+                네트워크 보안 장비(Fortinet 제품군) 취약점 악용을 예방하기 위한 보안 패치 및 최신 펌웨어 업데이트 권고 안내입니다.
+              </p>
+            </div>
+            <div class="news-meta">
+              <span>출처: KISA 보호나라</span>
+              <span class="news-link-text">원문 보기 →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. 오시는길 및 문의 (#location): 직통 문의 창구 + 빠른 문의 작성기 + 본사/지사 지도 -->
+    <section class="section section-white" id="location">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">CONTACT &amp; LOCATIONS</span>
+          <h2 class="section-title">도입 · 기술 <span>문의</span> 및 오시는길</h2>
+          <p class="section-desc">
+            솔루션 도입 상담·견적 요청부터 구축·유지보수 기술지원까지 에스엠피플스㈜ 전문 인력이 신속히 안내해 드립니다.
+          </p>
+        </div>
+
+        <!-- 상단: 직통 문의처(영업/기술) + 빠른 문의 메일 작성 도우미 2열 배치 -->
+        <div class="contact-top-grid">
+          <div class="direct-channels-box">
+            <div>
+              <span class="section-eyebrow">DIRECT CONTACT</span>
+              <h3>영업문의 · 기술문의 직통 안내</h3>
+              <p>
+                제품 도입 상담·비교 제안·견적 요청은 <strong>영업문의</strong>로, 구축 연동 및 운영 중 기술지원은 <strong>기술문의</strong>로 연락해 주세요.
+              </p>
+            </div>
+
+            <div class="channel-cards-stack">
+              <div class="channel-card">
+                <div>
+                  <div class="channel-role">영업문의 (솔루션 도입 · 견적 · 제안 요청)</div>
+                  <div class="channel-email">sales@smpeoples.kr</div>
+                </div>
+                <div class="channel-btns">
+                  <a href="mailto:sales@smpeoples.kr" class="btn btn-primary btn-sm">메일 보내기</a>
+                  <button type="button" class="btn btn-outline btn-sm" data-copy="sales@smpeoples.kr">복사</button>
+                </div>
+              </div>
+
+              <div class="channel-card">
+                <div>
+                  <div class="channel-role">기술문의 (구축 · 연동 · 기술지원)</div>
+                  <div class="channel-email">tech@smpeoples.kr</div>
+                </div>
+                <div class="channel-btns">
+                  <a href="mailto:tech@smpeoples.kr" class="btn btn-primary btn-sm">메일 보내기</a>
+                  <button type="button" class="btn btn-outline btn-sm" data-copy="tech@smpeoples.kr">복사</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="inquiry-composer" id="inquiryComposer">
+            <div class="composer-head">
+              <h3>맞춤 문의 메일 자동 작성</h3>
+              <p>관심 솔루션과 문의 유형을 선택하면 메일 제목과 본문이 자동으로 준비됩니다.</p>
+            </div>
+
+            <div class="form-group" style="margin-bottom:14px;">
+              <label>관심 솔루션 선택 (복수 선택 가능)</label>
+              <div class="solution-check-pills" id="composerSolutionPills">
+                <button type="button" class="sol-pill selected" data-sol="망연계 솔루션 (한싹)">망연계 (한싹)</button>
+                <button type="button" class="sol-pill" data-sol="SSL VPN (시큐위즈)">SSL VPN (시큐위즈)</button>
+                <button type="button" class="sol-pill" data-sol="웹방화벽 (파이오링크)">웹방화벽 (파이오링크)</button>
+                <button type="button" class="sol-pill" data-sol="웹 취약점진단 (나일소프트)">웹 취약점진단</button>
+                <button type="button" class="sol-pill" data-sol="서버 취약점진단 (나일소프트)">서버 취약점진단</button>
+                <button type="button" class="sol-pill" data-sol="NAC (지니언스)">NAC (지니언스)</button>
+                <button type="button" class="sol-pill" data-sol="시스템 접근제어 (휴네시온)">시스템 접근제어 (휴네시온)</button>
+                <button type="button" class="sol-pill" data-sol="데스크톱 가상화 (틸론)">데스크톱 가상화 (틸론)</button>
+              </div>
+            </div>
+
+            <div class="composer-grid">
+              <div class="form-group">
+                <label for="inqType">문의 구분</label>
+                <select id="inqType" class="form-select">
+                  <option value="sales@smpeoples.kr">영업문의 (sales@smpeoples.kr)</option>
+                  <option value="tech@smpeoples.kr">기술문의 (tech@smpeoples.kr)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="inqOrg">고객사 / 담당자명 (선택)</label>
+                <input type="text" id="inqOrg" class="form-input" placeholder="예: 00기업 정보보안팀 홍길동" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inqMemo">문의 내용 (선택)</label>
+              <textarea id="inqMemo" class="form-textarea" rows="2"
+                placeholder="도입 검토 환경, 수량, 희망 일정 또는 기술 문의 사항을 입력해 주세요."></textarea>
+            </div>
+
+            <div class="composer-actions">
+              <button type="button" class="btn btn-outline btn-sm" id="copyInquiryTextBtn">문의 내용 복사</button>
+              <button type="button" class="btn btn-primary btn-sm" id="sendInquiryMailBtn">이메일 작성 창 열기 →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 하단: 본사 & 대전 지사 오시는길 지도 카드 -->
+        <div class="location-grid">
+          <div class="office-card">
+            <div class="office-header">
+              <span class="office-badge">HEADQUARTERS · 수도권 거점</span>
+              <h3 class="office-title">에스엠피플스㈜ 본사</h3>
+              <p class="office-address">경기도 고양시 덕양구 청초로 66 덕은리버워크 B동 1619, 1607호</p>
+            </div>
+            <div class="office-map-wrap">
+              <div id="mapHq" class="office-map-canvas" aria-label="에스엠피플스 본사 지도"></div>
+            </div>
+            <div class="office-actions">
+              <button type="button" class="btn btn-outline btn-sm" data-copy="경기도 고양시 덕양구 청초로 66 덕은리버워크 B동 1619, 1607호">
+                본사 주소 복사
+              </button>
+              <div style="display:flex;gap:8px;">
+                <a href="https://map.kakao.com/link/map/%EC%97%90%EC%8A%A4%EC%97%A0%ED%94%BC%ED%94%8C%EC%8A%A4%20%EB%B3%B8%EC%82%AC,37.57787320936661,126.86238524970182"
+                  target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  카카오맵 길찾기
+                </a>
+                <a href="https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EA%B3%A0%EC%96%91%EC%8B%9C%20%EB%8D%95%EC%96%91%EA%B5%AC%20%EC%B2%AD%EC%B4%88%EB%A1%9C%2066"
+                  target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  네이버지도
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="office-card">
+            <div class="office-header">
+              <span class="office-badge">BRANCH OFFICE · 중부권 거점</span>
+              <h3 class="office-title">에스엠피플스㈜ 대전 지사</h3>
+              <p class="office-address">대전시 대덕구 대화동 611 가온비즈타워 1124호</p>
+            </div>
+            <div class="office-map-wrap">
+              <div id="mapBranch" class="office-map-canvas" aria-label="에스엠피플스 대전 지사 지도"></div>
+            </div>
+            <div class="office-actions">
+              <button type="button" class="btn btn-outline btn-sm" data-copy="대전시 대덕구 대화동 611 가온비즈타워 1124호">
+                지사 주소 복사
+              </button>
+              <div style="display:flex;gap:8px;">
+                <a href="https://map.kakao.com/link/map/%EC%97%90%EC%8A%A4%EC%97%A0%ED%94%BC%ED%94%8C%EC%8A%A4%20%EC%A7%80%EC%82%AC,36.366509,127.407302"
+                  target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  카카오맵 길찾기
+                </a>
+                <a href="https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%8B%9C%20%EB%8C%80%EB%8D%95%EA%B5%AC%20%EB%8C%80%ED%99%94%EB%8F%99%20611%20%EA%B0%80%EC%98%A8%EB%B9%84%EC%A6%88%ED%83%80%EC%9B%8C"
+                  target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  네이버지도
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. 푸터 -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="#home" style="display:inline-block;margin-bottom:10px;">
+            <img src="images/logo.svg" alt="에스엠피플스㈜ 로고" class="footer-logo logo-for-light" />
+            <img src="images/logo-dark.svg" alt="에스엠피플스㈜ 로고" class="footer-logo logo-for-dark" />
+          </a>
+          <p class="footer-slogan">Security Managing Peoples</p>
+          <p class="footer-desc">
+            정보보호 전문기업 에스엠피플스㈜는 고객의 소중한 정보자산을 안전하게 보호하는 최상의 보안 솔루션을 제공합니다.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>사이트 맵</h4>
+          <ul class="footer-links">
+            <li><a href="#about">Company (회사소개)</a></li>
+            <li><a href="#solutions">Solutions (보안 솔루션)</a></li>
+            <li><a href="#news">News (보안뉴스)</a></li>
+            <li><a href="#location">Location (오시는길·문의)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>파트너 벤더사</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.hanssak.co.kr/" target="_blank" rel="noopener noreferrer">한싹</a></li>
+            <li><a href="https://www.secuwiz.co.kr" target="_blank" rel="noopener noreferrer">시큐위즈</a></li>
+            <li><a href="https://www.piolink.com/kr/" target="_blank" rel="noopener noreferrer">파이오링크</a></li>
+            <li><a href="http://www.nilesoft.co.kr/" target="_blank" rel="noopener noreferrer">나일소프트</a></li>
+            <li><a href="https://www.genians.co.kr/" target="_blank" rel="noopener noreferrer">지니언스</a></li>
+            <li><a href="https://www.hunesion.com/" target="_blank" rel="noopener noreferrer">휴네시온</a></li>
+            <li><a href="https://www.tilon.com/" target="_blank" rel="noopener noreferrer">틸론</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>오시는길 및 문의</h4>
+          <ul class="footer-links">
+            <li>본사: 경기 고양시 덕양구 청초로 66 B동 1619, 1607호</li>
+            <li>지사: 대전시 대덕구 대화동 611 가온비즈타워 1124호</li>
+            <li>영업문의: <a href="mailto:sales@smpeoples.kr" style="color:var(--primary);font-weight:700;">sales@smpeoples.kr</a>
+            </li>
+            <li>기술문의: <a href="mailto:tech@smpeoples.kr" style="color:var(--primary);font-weight:700;">tech@smpeoples.kr</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="currentYear">2026</span> SMPeoples. All Rights Reserved.</p>
+        <p>정보보호 전문기업 에스엠피플스㈜</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PDF 브로셔 모달 뷰어 -->
+  <div class="modal-backdrop" id="pdfModal" role="dialog" aria-modal="true" aria-labelledby="pdfModalTitle">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3 id="pdfModalTitle">제품소개서 미리보기</h3>
+          <p id="pdfModalSubtitle">에스엠피플스㈜ 공식 공급 솔루션</p>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;">
+          <a href="#" id="pdfModalDownload" target="_blank" rel="noopener noreferrer" download
+            class="btn btn-primary btn-sm">
+            PDF 원본 다운로드
+          </a>
+          <button type="button" class="btn btn-outline btn-sm" id="pdfModalClose">닫기 (ESC)</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <iframe id="pdfModalFrame" title="제품소개서 PDF 뷰어" src="about:blank"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
